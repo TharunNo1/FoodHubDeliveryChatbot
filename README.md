@@ -9,8 +9,6 @@ An intelligent, AI-powered customer support chatbot designed for **FoodHub**, a 
 - [Objective](#objective)
 - [Data Description](#data-description)
 - [Project Architecture & Features](#project-architecture--features)
-- [Installation & Setup](#installation--setup)
-- [Dependencies](#dependencies)
 - [Author](#author)
 
 ---
@@ -56,39 +54,6 @@ The chatbot interacts with an order management database featuring columns such a
 * **SQL Agent**: Translates natural language customer queries into optimized SQL queries to query live order details safely.
 * **Guardrail Validation**: Ensures responses remain strictly within the domain of FoodHub operations and safeguards against erratic inputs.
 * **Agent Orchestration**: Utilizes **LangGraph** to manage multi-step reasoning and escalation flows.
-
----
-
-## ⚙️ Installation & Setup
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/food-delivery-chatbot.git
-   cd food-delivery-chatbot
-   ```
-
-2. **Install dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Set up environment variables**:
-   Create a `.env` file in the root directory and add your API keys:
-   ```env
-   GROQ_API_KEY=your_groq_api_key_here
-   ```
-
----
-
-## 📦 Dependencies
-
-The project relies on specific pinned versions to maintain a reproducible execution environment:
-* `langchain==0.3.27`
-* `langchain-core==0.3.75`
-* `langchain-community==0.3.27`
-* `langchain-groq==0.3.8`
-* `langgraph==0.6.6`
-* `pydantic==2.12.5`
 
 ---
 
